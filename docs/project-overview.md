@@ -53,4 +53,4 @@ The technical implementation includes:
 
 This project extends the official Kedro Spaceflights tutorial as the technical foundation for this portfolio case study.
 
-The original tutorial provides the foundation for the data science pipeline. Additional documentation, delivery artifacts, and project-management practices are being developed as part of this case study.
+The [original tutorial](https://docs.kedro.org/en/stable/tutorials/spaceflights_tutorial/) provides the foundation for the data science pipeline. Additional documentation, delivery artifacts, and project-management practices are being developed as part of this case study.
