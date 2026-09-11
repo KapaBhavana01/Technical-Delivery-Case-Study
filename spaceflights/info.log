@@ -1,0 +1,648 @@
+2025-08-15 12:57:47,029 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-08-15 12:57:51,005 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-08-15 14:18:26,489 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-08-15 14:18:32,104 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-08-15 14:20:25,671 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-08-15 14:20:29,620 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-08-15 14:20:31,588 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-08-15 14:20:33,785 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-08-15 14:20:33,793 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]companies[/dark_orange] (CSVDataset)...
+2025-08-15 14:20:33,826 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2025-08-15 14:20:33,845 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]preprocessed_companies[/dark_orange] (MemoryDataset)...
+2025-08-15 14:20:33,853 - kedro.runner.sequential_runner - INFO - Completed node: preprocess_companies_node
+2025-08-15 14:20:33,862 - kedro.runner.sequential_runner - INFO - Completed 1 out of 2 tasks
+2025-08-15 14:20:33,865 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]shuttles[/dark_orange] (ExcelDataset)...
+2025-08-15 14:20:41,830 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2025-08-15 14:20:41,871 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]preprocessed_shuttles[/dark_orange] (MemoryDataset)...
+2025-08-15 14:20:41,891 - kedro.runner.sequential_runner - INFO - Completed node: preprocess_shuttles_node
+2025-08-15 14:20:41,897 - kedro.runner.sequential_runner - INFO - Completed 2 out of 2 tasks
+2025-08-15 14:20:41,902 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 8.1 sec.
+2025-08-15 15:06:58,407 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-08-15 15:07:02,163 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-08-15 15:07:03,903 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-08-15 15:07:05,743 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-08-15 15:07:05,752 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]companies[/dark_orange] (CSVDataset)...
+2025-08-15 15:07:05,787 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2025-08-15 15:07:05,808 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]preprocessed_companies[/dark_orange] (ParquetDataset)...
+2025-08-15 15:07:05,877 - kedro.runner.sequential_runner - INFO - Completed node: preprocess_companies_node
+2025-08-15 15:07:05,884 - kedro.runner.sequential_runner - INFO - Completed 1 out of 2 tasks
+2025-08-15 15:07:05,889 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]shuttles[/dark_orange] (ExcelDataset)...
+2025-08-15 15:07:13,187 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2025-08-15 15:07:13,227 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]preprocessed_shuttles[/dark_orange] (ParquetDataset)...
+2025-08-15 15:07:13,318 - kedro.runner.sequential_runner - INFO - Completed node: preprocess_shuttles_node
+2025-08-15 15:07:13,318 - kedro.runner.sequential_runner - INFO - Completed 2 out of 2 tasks
+2025-08-15 15:07:13,327 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 7.6 sec.
+2025-08-15 15:38:38,302 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-08-15 15:38:49,257 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-08-15 15:39:00,509 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-08-15 15:39:02,515 - kedro_viz.api.rest.responses.run_events - WARNING - Run events file .viz\kedro_pipeline_events.json not found. It may be due to missing `kedro run`
+2025-08-15 15:39:21,922 - kedro_viz.api.rest.responses.run_events - WARNING - Run events file .viz\kedro_pipeline_events.json not found. It may be due to missing `kedro run`
+2025-09-14 10:58:26,458 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-14 10:58:27,684 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-14 10:58:28,453 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-14 10:58:28,657 - kedro_viz.integrations.kedro.run_hooks - WARNING - Workflow tracking is disabled during partial pipeline runs (executed using --from-nodes, --to-nodes, --tags, --pipeline, and more). `.viz/kedro_pipeline_events.json` will be created only during a full kedro run. See issue https://github.com/kedro-org/kedro-viz/issues/2443 for more details.
+2025-09-14 10:59:25,411 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-14 10:59:26,381 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-14 10:59:26,876 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-14 10:59:27,061 - kedro_viz.integrations.kedro.run_hooks - WARNING - Workflow tracking is disabled during partial pipeline runs (executed using --from-nodes, --to-nodes, --tags, --pipeline, and more). `.viz/kedro_pipeline_events.json` will be created only during a full kedro run. See issue https://github.com/kedro-org/kedro-viz/issues/2443 for more details.
+2025-09-14 10:59:27,636 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-09-14 10:59:27,636 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]companies[/dark_orange] (CSVDataset)...
+2025-09-14 10:59:27,686 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2025-09-14 10:59:27,695 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]preprocessed_companies[/dark_orange] (ParquetDataset)...
+2025-09-14 10:59:27,794 - kedro.runner.sequential_runner - INFO - Completed node: preprocess_companies_node
+2025-09-14 10:59:27,803 - kedro.runner.sequential_runner - INFO - Completed 1 out of 3 tasks
+2025-09-14 10:59:27,803 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]shuttles[/dark_orange] (ExcelDataset)...
+2025-09-14 10:59:30,007 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2025-09-14 10:59:30,015 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]preprocessed_shuttles[/dark_orange] (ParquetDataset)...
+2025-09-14 10:59:30,045 - kedro.runner.sequential_runner - INFO - Completed node: preprocess_shuttles_node
+2025-09-14 10:59:30,045 - kedro.runner.sequential_runner - INFO - Completed 2 out of 3 tasks
+2025-09-14 10:59:30,045 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]preprocessed_shuttles[/dark_orange] (ParquetDataset)...
+2025-09-14 10:59:30,094 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]preprocessed_companies[/dark_orange] (ParquetDataset)...
+2025-09-14 10:59:30,095 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]reviews[/dark_orange] (CSVDataset)...
+2025-09-14 10:59:30,116 - kedro.pipeline.node - INFO - Running node: create_model_input_table: create_model_input_table([preprocessed_shuttles;preprocessed_companies;reviews]) -> [model_input_table]
+2025-09-14 10:59:30,126 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]model_input_table[/dark_orange] (ParquetDataset)...
+2025-09-14 10:59:30,131 - kedro.runner.sequential_runner - WARNING - There are 1 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "create_model_input_table"
+2025-09-14 11:03:31,182 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-14 11:03:32,271 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-14 11:03:33,080 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-14 11:03:33,251 - kedro_viz.integrations.kedro.run_hooks - WARNING - Workflow tracking is disabled during partial pipeline runs (executed using --from-nodes, --to-nodes, --tags, --pipeline, and more). `.viz/kedro_pipeline_events.json` will be created only during a full kedro run. See issue https://github.com/kedro-org/kedro-viz/issues/2443 for more details.
+2025-09-14 11:03:33,943 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-09-14 11:03:33,943 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]companies[/dark_orange] (CSVDataset)...
+2025-09-14 11:03:33,978 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2025-09-14 11:03:33,989 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]preprocessed_companies[/dark_orange] (ParquetDataset)...
+2025-09-14 11:03:34,004 - kedro.runner.sequential_runner - INFO - Completed node: preprocess_companies_node
+2025-09-14 11:03:34,010 - kedro.runner.sequential_runner - INFO - Completed 1 out of 3 tasks
+2025-09-14 11:03:34,013 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]shuttles[/dark_orange] (ExcelDataset)...
+2025-09-14 11:03:36,250 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2025-09-14 11:03:36,258 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]preprocessed_shuttles[/dark_orange] (ParquetDataset)...
+2025-09-14 11:03:36,292 - kedro.runner.sequential_runner - INFO - Completed node: preprocess_shuttles_node
+2025-09-14 11:03:36,292 - kedro.runner.sequential_runner - INFO - Completed 2 out of 3 tasks
+2025-09-14 11:03:36,292 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]preprocessed_shuttles[/dark_orange] (ParquetDataset)...
+2025-09-14 11:03:36,300 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]preprocessed_companies[/dark_orange] (ParquetDataset)...
+2025-09-14 11:03:36,310 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]reviews[/dark_orange] (CSVDataset)...
+2025-09-14 11:03:36,324 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_shuttles;preprocessed_companies;reviews]) -> [model_input_table]
+2025-09-14 11:03:36,324 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]model_input_table[/dark_orange] (ParquetDataset)...
+2025-09-14 11:03:36,361 - kedro.runner.sequential_runner - INFO - Completed node: create_model_input_table_node
+2025-09-14 11:03:36,363 - kedro.runner.sequential_runner - INFO - Completed 3 out of 3 tasks
+2025-09-14 11:03:36,365 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 2.4 sec.
+2025-09-14 11:04:14,621 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-14 11:04:19,224 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-14 11:04:24,400 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-14 11:04:25,680 - kedro_viz.api.rest.responses.run_events - WARNING - Run events file .viz\kedro_pipeline_events.json not found. It may be due to missing `kedro run`
+2025-09-18 18:15:55,093 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-18 18:16:03,863 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-18 18:16:50,580 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-18 18:16:52,712 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-18 19:11:50,774 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-18 19:11:55,144 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-18 19:12:28,743 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-18 19:12:32,306 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-18 19:12:45,255 - py.warnings - WARNING - C:\Users\kapab\OneDrive\Desktop\KedroLabs\venv\Lib\site-packages\kedro\framework\project\__init__.py:450: UserWarning: An error occurred while importing the 'spaceflights.pipelines.data_science' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\venv\Lib\site-packages\kedro\framework\project\__init__.py", line 442, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\pipeline.py", line 8, in <module>
+    from .nodes import evaluate_model, train_model, split_data
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\nodes.py", line 16, in <module>
+    def split_data(df: pd.DataFrame, parameters: t.Dict) -> t.tuple:
+                                                 ^^^^^^
+AttributeError: module 'types' has no attribute 'Dict'
+
+  warnings.warn(
+
+2025-09-18 19:12:45,297 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-18 19:13:08,856 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-18 19:13:16,724 - py.warnings - WARNING - C:\Users\kapab\OneDrive\Desktop\KedroLabs\venv\Lib\site-packages\kedro\framework\project\__init__.py:450: UserWarning: An error occurred while importing the 'spaceflights.pipelines.data_science' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\venv\Lib\site-packages\kedro\framework\project\__init__.py", line 442, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\pipeline.py", line 8, in <module>
+    from .nodes import evaluate_model, train_model, split_data
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\nodes.py", line 16, in <module>
+    def split_data(df: pd.DataFrame, parameters: t.Dict) -> t.tuple:
+                                                 ^^^^^^
+AttributeError: module 'types' has no attribute 'Dict'
+
+  warnings.warn(
+
+2025-09-18 19:13:16,748 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-18 19:14:47,165 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-18 19:14:55,368 - py.warnings - WARNING - C:\Users\kapab\OneDrive\Desktop\KedroLabs\venv\Lib\site-packages\kedro\framework\project\__init__.py:450: UserWarning: An error occurred while importing the 'spaceflights.pipelines.data_science' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\venv\Lib\site-packages\kedro\framework\project\__init__.py", line 442, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\pipeline.py", line 8, in <module>
+    from .nodes import evaluate_model, train_model, split_data
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\nodes.py", line 16, in <module>
+    def split_data(df: pd.DataFrame, parameters: t.Dict) -> t.tuple:
+                                                 ^^^^^^
+AttributeError: module 'types' has no attribute 'Dict'
+
+  warnings.warn(
+
+2025-09-18 19:14:55,428 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-18 19:18:50,642 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-18 19:18:55,749 - py.warnings - WARNING - C:\Users\kapab\OneDrive\Desktop\KedroLabs\venv\Lib\site-packages\kedro\framework\project\__init__.py:450: UserWarning: An error occurred while importing the 'spaceflights.pipelines.data_science' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\venv\Lib\site-packages\kedro\framework\project\__init__.py", line 442, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\pipeline.py", line 8, in <module>
+    from .nodes import evaluate_model, train_model, split_data
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\nodes.py", line 5, in <module>
+    from typing import dict, Tuple
+ImportError: cannot import name 'dict' from 'typing' (C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\typing.py)
+
+  warnings.warn(
+
+2025-09-18 19:18:55,783 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-18 19:21:06,392 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-18 19:21:11,245 - py.warnings - WARNING - C:\Users\kapab\OneDrive\Desktop\KedroLabs\venv\Lib\site-packages\kedro\framework\project\__init__.py:450: UserWarning: An error occurred while importing the 'spaceflights.pipelines.data_science' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\venv\Lib\site-packages\kedro\framework\project\__init__.py", line 442, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\pipeline.py", line 8, in <module>
+    from .nodes import evaluate_model, train_model, split_data
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\nodes.py", line 5, in <module>
+    from typing import dict, Tuple
+ImportError: cannot import name 'dict' from 'typing' (C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\typing.py)
+
+  warnings.warn(
+
+2025-09-18 19:21:11,284 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-18 19:23:22,173 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-18 19:23:29,193 - py.warnings - WARNING - C:\Users\kapab\OneDrive\Desktop\KedroLabs\venv\Lib\site-packages\kedro\framework\project\__init__.py:450: UserWarning: An error occurred while importing the 'spaceflights.pipelines.data_science' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\venv\Lib\site-packages\kedro\framework\project\__init__.py", line 442, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\pipeline.py", line 8, in <module>
+    from .nodes import evaluate_model, train_model, split_data
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\nodes.py", line 16, in <module>
+    def split_data(df: pd.DataFrame, parameters: t.Dict) -> t.Tuple:
+                                                 ^^^^^^
+AttributeError: module 'types' has no attribute 'Dict'
+
+  warnings.warn(
+
+2025-09-18 19:23:29,221 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-18 19:23:56,798 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-18 19:24:03,796 - py.warnings - WARNING - C:\Users\kapab\OneDrive\Desktop\KedroLabs\venv\Lib\site-packages\kedro\framework\project\__init__.py:450: UserWarning: An error occurred while importing the 'spaceflights.pipelines.data_science' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\venv\Lib\site-packages\kedro\framework\project\__init__.py", line 442, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\pipeline.py", line 8, in <module>
+    from .nodes import evaluate_model, train_model, split_data
+  File "C:\Users\kapab\OneDrive\Desktop\KedroLabs\spaceflights\src\spaceflights\pipelines\data_science\nodes.py", line 16, in <module>
+    def split_data(df: pd.DataFrame, parameters: t.dict) -> t.Tuple:
+                                                 ^^^^^^
+AttributeError: module 'types' has no attribute 'dict'
+
+  warnings.warn(
+
+2025-09-18 19:24:03,937 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-18 19:26:15,924 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-18 19:26:22,924 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-18 19:28:42,839 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-18 19:28:46,183 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-18 19:28:50,416 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-18 19:28:50,623 - kedro_viz.integrations.kedro.run_hooks - WARNING - Workflow tracking is disabled during partial pipeline runs (executed using --from-nodes, --to-nodes, --tags, --pipeline, and more). `.viz/kedro_pipeline_events.json` will be created only during a full kedro run. See issue https://github.com/kedro-org/kedro-viz/issues/2443 for more details.
+2025-09-18 19:28:55,093 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-09-18 19:28:55,110 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]model_input_table[/dark_orange] (ParquetDataset)...
+2025-09-18 19:28:55,288 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]params:model_options[/dark_orange] (MemoryDataset)...
+2025-09-18 19:28:55,304 - kedro.pipeline.node - INFO - Running node: split_data([model_input_table;params:model_options]) -> [X_train;X_test;y_train;y_test]
+2025-09-18 19:28:55,319 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]X_train[/dark_orange] (MemoryDataset)...
+2025-09-18 19:28:55,319 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]X_test[/dark_orange] (MemoryDataset)...
+2025-09-18 19:28:55,344 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]y_train[/dark_orange] (MemoryDataset)...
+2025-09-18 19:28:55,359 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]y_test[/dark_orange] (MemoryDataset)...
+2025-09-18 19:28:55,368 - kedro.runner.sequential_runner - INFO - Completed node: split_data__2e3e29a5
+2025-09-18 19:28:55,381 - kedro.runner.sequential_runner - INFO - Completed 1 out of 3 tasks
+2025-09-18 19:28:55,385 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]X_train[/dark_orange] (MemoryDataset)...
+2025-09-18 19:28:55,405 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]y_train[/dark_orange] (MemoryDataset)...
+2025-09-18 19:28:55,419 - kedro.pipeline.node - INFO - Running node: train_model([X_train;y_train]) -> [regressor]
+2025-09-18 19:28:55,437 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]regressor[/dark_orange] (MemoryDataset)...
+2025-09-18 19:28:55,446 - kedro.runner.sequential_runner - INFO - Completed node: train_model__12b8827b
+2025-09-18 19:28:55,452 - kedro.runner.sequential_runner - INFO - Completed 2 out of 3 tasks
+2025-09-18 19:28:55,461 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]regressor[/dark_orange] (MemoryDataset)...
+2025-09-18 19:28:55,468 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]X_test[/dark_orange] (MemoryDataset)...
+2025-09-18 19:28:55,478 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]y_test[/dark_orange] (MemoryDataset)...
+2025-09-18 19:28:55,485 - kedro.pipeline.node - INFO - Running node: evaluate_model([regressor;X_test;y_test]) -> None
+2025-09-18 19:28:55,493 - spaceflights.pipelines.data_science.nodes - INFO - Model has a coefficient R^2 of 0.406 on test data.
+2025-09-18 19:28:55,503 - kedro.runner.sequential_runner - INFO - Completed node: evaluate_model__81bd71c8
+2025-09-18 19:28:55,503 - kedro.runner.sequential_runner - INFO - Completed 3 out of 3 tasks
+2025-09-18 19:28:55,514 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 0.4 sec.
+2025-09-20 11:59:40,499 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-20 11:59:42,060 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-20 11:59:46,804 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-20 11:59:47,038 - kedro_viz.integrations.kedro.run_hooks - WARNING - Workflow tracking is disabled during partial pipeline runs (executed using --from-nodes, --to-nodes, --tags, --pipeline, and more). `.viz/kedro_pipeline_events.json` will be created only during a full kedro run. See issue https://github.com/kedro-org/kedro-viz/issues/2443 for more details.
+2025-09-20 11:59:48,447 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-09-20 11:59:48,463 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]model_input_table[/dark_orange] (ParquetDataset)...
+2025-09-20 11:59:48,630 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]params:model_options[/dark_orange] (MemoryDataset)...
+2025-09-20 11:59:48,646 - kedro.pipeline.node - INFO - Running node: split_data([model_input_table;params:model_options]) -> [X_train;X_test;y_train;y_test]
+2025-09-20 11:59:48,702 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]X_train[/dark_orange] (MemoryDataset)...
+2025-09-20 11:59:48,702 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]X_test[/dark_orange] (MemoryDataset)...
+2025-09-20 11:59:48,711 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]y_train[/dark_orange] (MemoryDataset)...
+2025-09-20 11:59:48,716 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]y_test[/dark_orange] (MemoryDataset)...
+2025-09-20 11:59:48,728 - kedro.runner.sequential_runner - INFO - Completed node: split_data__2e3e29a5
+2025-09-20 11:59:48,734 - kedro.runner.sequential_runner - INFO - Completed 1 out of 3 tasks
+2025-09-20 11:59:48,736 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]X_train[/dark_orange] (MemoryDataset)...
+2025-09-20 11:59:48,736 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]y_train[/dark_orange] (MemoryDataset)...
+2025-09-20 11:59:48,743 - kedro.pipeline.node - INFO - Running node: train_model([X_train;y_train]) -> [regressor]
+2025-09-20 11:59:48,763 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]regressor[/dark_orange] (PickleDataset)...
+2025-09-20 11:59:48,780 - kedro.runner.sequential_runner - INFO - Completed node: train_model__12b8827b
+2025-09-20 11:59:48,791 - kedro.runner.sequential_runner - INFO - Completed 2 out of 3 tasks
+2025-09-20 11:59:48,791 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]regressor[/dark_orange] (PickleDataset)...
+2025-09-20 11:59:48,799 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]X_test[/dark_orange] (MemoryDataset)...
+2025-09-20 11:59:48,800 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]y_test[/dark_orange] (MemoryDataset)...
+2025-09-20 11:59:48,811 - kedro.pipeline.node - INFO - Running node: evaluate_model([regressor;X_test;y_test]) -> None
+2025-09-20 11:59:48,814 - spaceflights.pipelines.data_science.nodes - INFO - Model has a coefficient R^2 of 0.400 on test data.
+2025-09-20 11:59:48,822 - kedro.runner.sequential_runner - INFO - Completed node: evaluate_model__81bd71c8
+2025-09-20 11:59:48,823 - kedro.runner.sequential_runner - INFO - Completed 3 out of 3 tasks
+2025-09-20 11:59:48,823 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 0.4 sec.
+2025-09-20 12:49:39,538 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-20 12:49:40,689 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-20 12:49:42,293 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-20 12:50:54,787 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-20 12:50:56,076 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-20 12:50:57,673 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-20 12:52:01,703 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-20 12:52:02,944 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-20 12:52:04,421 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-20 12:57:41,624 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-20 12:57:42,768 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-20 12:57:44,169 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-20 12:57:44,334 - kedro_viz.integrations.kedro.run_hooks - WARNING - Workflow tracking is disabled during partial pipeline runs (executed using --from-nodes, --to-nodes, --tags, --pipeline, and more). `.viz/kedro_pipeline_events.json` will be created only during a full kedro run. See issue https://github.com/kedro-org/kedro-viz/issues/2443 for more details.
+2025-09-20 12:57:44,849 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-09-20 12:57:44,855 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]model_input_table[/dark_orange] (ParquetDataset)...
+2025-09-20 12:57:44,873 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]params:active_modelling_pipeline.model_options[/dark_orange] (MemoryDataset)...
+2025-09-20 12:57:44,877 - kedro.pipeline.node - INFO - Running node: split_data([model_input_table;params:active_modelling_pipeline.model_options]) -> [active_modelling_pipeline.X_train;active_modelling_pipeline.X_test;active_modelling_pipeline.y_train;active_modelling_pipeline.y_test]
+2025-09-20 12:57:44,881 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.X_train[/dark_orange] (MemoryDataset)...
+2025-09-20 12:57:44,884 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.X_test[/dark_orange] (MemoryDataset)...
+2025-09-20 12:57:44,887 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.y_train[/dark_orange] (MemoryDataset)...
+2025-09-20 12:57:44,893 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.y_test[/dark_orange] (MemoryDataset)...
+2025-09-20 12:57:44,896 - kedro.runner.sequential_runner - INFO - Completed node: active_modelling_pipeline.split_data__7035b8e3
+2025-09-20 12:57:44,897 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2025-09-20 12:57:44,900 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]model_input_table[/dark_orange] (ParquetDataset)...
+2025-09-20 12:57:44,911 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]params:candidate_modelling_pipeline.model_options[/dark_orange] (MemoryDataset)...
+2025-09-20 12:57:44,915 - kedro.pipeline.node - INFO - Running node: split_data([model_input_table;params:candidate_modelling_pipeline.model_options]) -> [candidate_modelling_pipeline.X_train;candidate_modelling_pipeline.X_test;candidate_modelling_pipeline.y_train;candidate_modelling_pipeline.y_test]
+2025-09-20 12:57:44,915 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.X_train[/dark_orange] (MemoryDataset)...
+2025-09-20 12:57:44,926 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.X_test[/dark_orange] (MemoryDataset)...
+2025-09-20 12:57:44,926 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.y_train[/dark_orange] (MemoryDataset)...
+2025-09-20 12:57:44,931 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.y_test[/dark_orange] (MemoryDataset)...
+2025-09-20 12:57:44,934 - kedro.runner.sequential_runner - INFO - Completed node: candidate_modelling_pipeline.split_data__a4687b9e
+2025-09-20 12:57:44,934 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2025-09-20 12:57:44,939 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.X_train[/dark_orange] (MemoryDataset)...
+2025-09-20 12:57:44,942 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.y_train[/dark_orange] (MemoryDataset)...
+2025-09-20 12:57:44,946 - kedro.pipeline.node - INFO - Running node: train_model([active_modelling_pipeline.X_train;active_modelling_pipeline.y_train]) -> [active_modelling_pipeline.regressor]
+2025-09-20 12:57:44,950 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.regressor[/dark_orange] (PickleDataset)...
+2025-09-20 12:57:44,971 - kedro.runner.sequential_runner - INFO - Completed node: active_modelling_pipeline.train_model__08df062b
+2025-09-20 12:57:44,972 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2025-09-20 12:57:44,976 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.X_train[/dark_orange] (MemoryDataset)...
+2025-09-20 12:57:44,978 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.y_train[/dark_orange] (MemoryDataset)...
+2025-09-20 12:57:44,979 - kedro.pipeline.node - INFO - Running node: train_model([candidate_modelling_pipeline.X_train;candidate_modelling_pipeline.y_train]) -> [candidate_modelling_pipeline.regressor]
+2025-09-20 12:57:44,979 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.regressor[/dark_orange] (PickleDataset)...
+2025-09-20 12:57:45,001 - kedro.runner.sequential_runner - INFO - Completed node: candidate_modelling_pipeline.train_model__12193795
+2025-09-20 12:57:45,002 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2025-09-20 12:57:45,005 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.regressor[/dark_orange] (PickleDataset)...
+2025-09-20 12:57:45,009 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.X_test[/dark_orange] (MemoryDataset)...
+2025-09-20 12:57:45,012 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.y_test[/dark_orange] (MemoryDataset)...
+2025-09-20 12:57:45,014 - kedro.pipeline.node - INFO - Running node: evaluate_model([active_modelling_pipeline.regressor;active_modelling_pipeline.X_test;active_modelling_pipeline.y_test]) -> None
+2025-09-20 12:57:45,017 - spaceflights.pipelines.data_science.nodes - INFO - Model has a coefficient R^2 of 0.404 on test data.
+2025-09-20 12:57:45,017 - kedro.runner.sequential_runner - INFO - Completed node: active_modelling_pipeline.evaluate_model__38d1a3b0
+2025-09-20 12:57:45,021 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2025-09-20 12:57:45,022 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.regressor[/dark_orange] (PickleDataset)...
+2025-09-20 12:57:45,029 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.X_test[/dark_orange] (MemoryDataset)...
+2025-09-20 12:57:45,029 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.y_test[/dark_orange] (MemoryDataset)...
+2025-09-20 12:57:45,034 - kedro.pipeline.node - INFO - Running node: evaluate_model([candidate_modelling_pipeline.regressor;candidate_modelling_pipeline.X_test;candidate_modelling_pipeline.y_test]) -> None
+2025-09-20 12:57:45,041 - spaceflights.pipelines.data_science.nodes - INFO - Model has a coefficient R^2 of 0.425 on test data.
+2025-09-20 12:57:45,041 - kedro.runner.sequential_runner - INFO - Completed node: candidate_modelling_pipeline.evaluate_model__e61e06b0
+2025-09-20 12:57:45,045 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2025-09-20 12:57:45,048 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 0.2 sec.
+2025-09-20 13:12:06,631 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-20 13:12:07,982 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-20 13:12:09,770 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-20 13:12:10,019 - kedro_viz.integrations.kedro.run_hooks - WARNING - Workflow tracking is disabled during partial pipeline runs (executed using --from-nodes, --to-nodes, --tags, --pipeline, and more). `.viz/kedro_pipeline_events.json` will be created only during a full kedro run. See issue https://github.com/kedro-org/kedro-viz/issues/2443 for more details.
+2025-09-20 13:12:10,619 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]model_input_table[/dark_orange] (ParquetDataset)...
+2025-09-20 13:12:10,619 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]model_input_table[/dark_orange] (ParquetDataset)...
+2025-09-20 13:12:10,653 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]params:candidate_modelling_pipeline.model_options[/dark_orange] (MemoryDataset)...
+2025-09-20 13:12:10,653 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]params:active_modelling_pipeline.model_options[/dark_orange] (MemoryDataset)...
+2025-09-20 13:12:10,653 - kedro.pipeline.node - INFO - Running node: split_data([model_input_table;params:candidate_modelling_pipeline.model_options]) -> [candidate_modelling_pipeline.X_train;candidate_modelling_pipeline.X_test;candidate_modelling_pipeline.y_train;candidate_modelling_pipeline.y_test]
+2025-09-20 13:12:10,653 - kedro.pipeline.node - INFO - Running node: split_data([model_input_table;params:active_modelling_pipeline.model_options]) -> [active_modelling_pipeline.X_train;active_modelling_pipeline.X_test;active_modelling_pipeline.y_train;active_modelling_pipeline.y_test]
+2025-09-20 13:12:10,668 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.X_train[/dark_orange] (MemoryDataset)...
+2025-09-20 13:12:10,669 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.X_train[/dark_orange] (MemoryDataset)...
+2025-09-20 13:12:10,675 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.X_test[/dark_orange] (MemoryDataset)...
+2025-09-20 13:12:10,675 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.X_test[/dark_orange] (MemoryDataset)...
+2025-09-20 13:12:10,675 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.y_train[/dark_orange] (MemoryDataset)...
+2025-09-20 13:12:10,683 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.y_train[/dark_orange] (MemoryDataset)...
+2025-09-20 13:12:10,684 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.y_test[/dark_orange] (MemoryDataset)...
+2025-09-20 13:12:10,684 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.y_test[/dark_orange] (MemoryDataset)...
+2025-09-20 13:12:10,691 - kedro.runner.thread_runner - INFO - Completed node: candidate_modelling_pipeline.split_data__a4687b9e
+2025-09-20 13:12:10,691 - kedro.runner.thread_runner - INFO - Completed 1 out of 6 tasks
+2025-09-20 13:12:10,696 - kedro.runner.thread_runner - INFO - Completed node: active_modelling_pipeline.split_data__7035b8e3
+2025-09-20 13:12:10,697 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.X_train[/dark_orange] (MemoryDataset)...
+2025-09-20 13:12:10,698 - kedro.runner.thread_runner - INFO - Completed 2 out of 6 tasks
+2025-09-20 13:12:10,701 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.X_train[/dark_orange] (MemoryDataset)...
+2025-09-20 13:12:10,701 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.y_train[/dark_orange] (MemoryDataset)...
+2025-09-20 13:12:10,707 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.y_train[/dark_orange] (MemoryDataset)...
+2025-09-20 13:12:10,709 - kedro.pipeline.node - INFO - Running node: train_model([candidate_modelling_pipeline.X_train;candidate_modelling_pipeline.y_train]) -> [candidate_modelling_pipeline.regressor]
+2025-09-20 13:12:10,715 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.regressor[/dark_orange] (PickleDataset)...
+2025-09-20 13:12:10,715 - kedro.pipeline.node - INFO - Running node: train_model([active_modelling_pipeline.X_train;active_modelling_pipeline.y_train]) -> [active_modelling_pipeline.regressor]
+2025-09-20 13:12:10,723 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.regressor[/dark_orange] (PickleDataset)...
+2025-09-20 13:12:10,732 - kedro.runner.thread_runner - INFO - Completed node: candidate_modelling_pipeline.train_model__12193795
+2025-09-20 13:12:10,732 - kedro.runner.thread_runner - INFO - Completed 3 out of 6 tasks
+2025-09-20 13:12:10,739 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.regressor[/dark_orange] (PickleDataset)...
+2025-09-20 13:12:10,739 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.X_test[/dark_orange] (MemoryDataset)...
+2025-09-20 13:12:10,739 - kedro.runner.thread_runner - INFO - Completed node: active_modelling_pipeline.train_model__08df062b
+2025-09-20 13:12:10,746 - kedro.runner.thread_runner - INFO - Completed 4 out of 6 tasks
+2025-09-20 13:12:10,747 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.regressor[/dark_orange] (PickleDataset)...
+2025-09-20 13:12:10,747 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.y_test[/dark_orange] (MemoryDataset)...
+2025-09-20 13:12:10,747 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.X_test[/dark_orange] (MemoryDataset)...
+2025-09-20 13:12:10,756 - kedro.pipeline.node - INFO - Running node: evaluate_model([candidate_modelling_pipeline.regressor;candidate_modelling_pipeline.X_test;candidate_modelling_pipeline.y_test]) -> None
+2025-09-20 13:12:10,756 - spaceflights.pipelines.data_science.nodes - INFO - Model has a coefficient R^2 of 0.358 on test data.
+2025-09-20 13:12:10,756 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.y_test[/dark_orange] (MemoryDataset)...
+2025-09-20 13:12:10,762 - kedro.runner.thread_runner - INFO - Completed node: candidate_modelling_pipeline.evaluate_model__e61e06b0
+2025-09-20 13:12:10,765 - kedro.runner.thread_runner - INFO - Completed 5 out of 6 tasks
+2025-09-20 13:12:10,767 - kedro.pipeline.node - INFO - Running node: evaluate_model([active_modelling_pipeline.regressor;active_modelling_pipeline.X_test;active_modelling_pipeline.y_test]) -> None
+2025-09-20 13:12:10,770 - spaceflights.pipelines.data_science.nodes - INFO - Model has a coefficient R^2 of 0.380 on test data.
+2025-09-20 13:12:10,773 - kedro.runner.thread_runner - INFO - Completed node: active_modelling_pipeline.evaluate_model__38d1a3b0
+2025-09-20 13:12:10,773 - kedro.runner.thread_runner - INFO - Completed 6 out of 6 tasks
+2025-09-20 13:12:10,778 - kedro.runner.thread_runner - INFO - Pipeline execution completed successfully in 0.2 sec.
+2025-09-21 14:28:22,148 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-21 14:28:23,957 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-21 14:28:57,050 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-21 14:28:58,210 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-21 14:29:28,916 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-21 14:29:30,032 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-21 14:29:54,935 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-21 14:30:00,837 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-21 14:30:56,088 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-21 14:30:57,455 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-21 14:30:58,958 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-21 14:30:59,149 - kedro_viz.integrations.kedro.run_hooks - WARNING - Workflow tracking is disabled during partial pipeline runs (executed using --from-nodes, --to-nodes, --tags, --pipeline, and more). `.viz/kedro_pipeline_events.json` will be created only during a full kedro run. See issue https://github.com/kedro-org/kedro-viz/issues/2443 for more details.
+2025-09-21 14:30:59,673 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-09-21 14:30:59,675 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]model_input_table[/dark_orange] (ParquetDataset)...
+2025-09-21 14:30:59,804 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]params:active_modelling_pipeline.model_options[/dark_orange] (MemoryDataset)...
+2025-09-21 14:30:59,809 - kedro.pipeline.node - INFO - Running node: split_data([model_input_table;params:active_modelling_pipeline.model_options]) -> [active_modelling_pipeline.X_train;active_modelling_pipeline.X_test;active_modelling_pipeline.y_train;active_modelling_pipeline.y_test]
+2025-09-21 14:30:59,829 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.X_train[/dark_orange] (MemoryDataset)...
+2025-09-21 14:30:59,829 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.X_test[/dark_orange] (MemoryDataset)...
+2025-09-21 14:30:59,837 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.y_train[/dark_orange] (MemoryDataset)...
+2025-09-21 14:30:59,841 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.y_test[/dark_orange] (MemoryDataset)...
+2025-09-21 14:30:59,845 - kedro.runner.sequential_runner - INFO - Completed node: active_modelling_pipeline.split_data__7035b8e3
+2025-09-21 14:30:59,846 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2025-09-21 14:30:59,849 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]model_input_table[/dark_orange] (ParquetDataset)...
+2025-09-21 14:30:59,862 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]params:candidate_modelling_pipeline.model_options[/dark_orange] (MemoryDataset)...
+2025-09-21 14:30:59,865 - kedro.pipeline.node - INFO - Running node: split_data([model_input_table;params:candidate_modelling_pipeline.model_options]) -> [candidate_modelling_pipeline.X_train;candidate_modelling_pipeline.X_test;candidate_modelling_pipeline.y_train;candidate_modelling_pipeline.y_test]
+2025-09-21 14:30:59,869 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.X_train[/dark_orange] (MemoryDataset)...
+2025-09-21 14:30:59,871 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.X_test[/dark_orange] (MemoryDataset)...
+2025-09-21 14:30:59,878 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.y_train[/dark_orange] (MemoryDataset)...
+2025-09-21 14:30:59,882 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.y_test[/dark_orange] (MemoryDataset)...
+2025-09-21 14:30:59,884 - kedro.runner.sequential_runner - INFO - Completed node: candidate_modelling_pipeline.split_data__a4687b9e
+2025-09-21 14:30:59,886 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2025-09-21 14:30:59,890 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.X_train[/dark_orange] (MemoryDataset)...
+2025-09-21 14:30:59,895 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.y_train[/dark_orange] (MemoryDataset)...
+2025-09-21 14:30:59,900 - kedro.pipeline.node - INFO - Running node: train_model([active_modelling_pipeline.X_train;active_modelling_pipeline.y_train]) -> [active_modelling_pipeline.regressor]
+2025-09-21 14:30:59,929 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.regressor[/dark_orange] (PickleDataset)...
+2025-09-21 14:30:59,954 - kedro.runner.sequential_runner - INFO - Completed node: active_modelling_pipeline.train_model__08df062b
+2025-09-21 14:30:59,958 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2025-09-21 14:30:59,960 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.X_train[/dark_orange] (MemoryDataset)...
+2025-09-21 14:30:59,971 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.y_train[/dark_orange] (MemoryDataset)...
+2025-09-21 14:30:59,978 - kedro.pipeline.node - INFO - Running node: train_model([candidate_modelling_pipeline.X_train;candidate_modelling_pipeline.y_train]) -> [candidate_modelling_pipeline.regressor]
+2025-09-21 14:30:59,983 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.regressor[/dark_orange] (PickleDataset)...
+2025-09-21 14:30:59,995 - kedro.runner.sequential_runner - INFO - Completed node: candidate_modelling_pipeline.train_model__12193795
+2025-09-21 14:30:59,995 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2025-09-21 14:31:00,002 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.regressor[/dark_orange] (PickleDataset)...
+2025-09-21 14:31:00,009 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.X_test[/dark_orange] (MemoryDataset)...
+2025-09-21 14:31:00,015 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.y_test[/dark_orange] (MemoryDataset)...
+2025-09-21 14:31:00,022 - kedro.pipeline.node - INFO - Running node: evaluate_model([active_modelling_pipeline.regressor;active_modelling_pipeline.X_test;active_modelling_pipeline.y_test]) -> None
+2025-09-21 14:31:00,029 - spaceflights.pipelines.data_science.nodes - INFO - Model has a coefficient R^2 of 0.421 on test data.
+2025-09-21 14:31:00,029 - kedro.runner.sequential_runner - INFO - Completed node: active_modelling_pipeline.evaluate_model__38d1a3b0
+2025-09-21 14:31:00,034 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2025-09-21 14:31:00,035 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.regressor[/dark_orange] (PickleDataset)...
+2025-09-21 14:31:00,040 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.X_test[/dark_orange] (MemoryDataset)...
+2025-09-21 14:31:00,044 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.y_test[/dark_orange] (MemoryDataset)...
+2025-09-21 14:31:00,049 - kedro.pipeline.node - INFO - Running node: evaluate_model([candidate_modelling_pipeline.regressor;candidate_modelling_pipeline.X_test;candidate_modelling_pipeline.y_test]) -> None
+2025-09-21 14:31:00,051 - spaceflights.pipelines.data_science.nodes - INFO - Model has a coefficient R^2 of 0.382 on test data.
+2025-09-21 14:31:00,051 - kedro.runner.sequential_runner - INFO - Completed node: candidate_modelling_pipeline.evaluate_model__e61e06b0
+2025-09-21 14:31:00,056 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2025-09-21 14:31:00,057 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 0.4 sec.
+2025-09-21 15:07:26,632 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-21 15:07:27,807 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-21 15:07:29,251 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-21 15:07:29,453 - kedro_viz.integrations.kedro.run_hooks - WARNING - Workflow tracking is disabled during partial pipeline runs (executed using --from-nodes, --to-nodes, --tags, --pipeline, and more). `.viz/kedro_pipeline_events.json` will be created only during a full kedro run. See issue https://github.com/kedro-org/kedro-viz/issues/2443 for more details.
+2025-09-21 15:07:29,911 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-09-21 15:07:29,927 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]companies[/dark_orange] (CSVDataset)...
+2025-09-21 15:07:29,927 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2025-09-21 15:08:09,541 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-21 15:08:10,684 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-21 15:08:12,108 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-21 15:08:12,325 - kedro_viz.integrations.kedro.run_hooks - WARNING - Workflow tracking is disabled during partial pipeline runs (executed using --from-nodes, --to-nodes, --tags, --pipeline, and more). `.viz/kedro_pipeline_events.json` will be created only during a full kedro run. See issue https://github.com/kedro-org/kedro-viz/issues/2443 for more details.
+2025-09-21 15:08:12,775 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-09-21 15:08:12,775 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]companies[/dark_orange] (CSVDataset)...
+2025-09-21 15:08:12,810 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2025-09-21 15:08:12,810 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]preprocessed_companies[/dark_orange] (ParquetDataset)...
+2025-09-21 15:08:12,875 - kedro.runner.sequential_runner - INFO - Completed node: preprocess_companies_node
+2025-09-21 15:08:12,875 - kedro.runner.sequential_runner - INFO - Completed 1 out of 3 tasks
+2025-09-21 15:08:12,883 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]shuttles[/dark_orange] (ExcelDataset)...
+2025-09-21 15:08:16,730 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2025-09-21 15:08:16,746 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]preprocessed_shuttles[/dark_orange] (ParquetDataset)...
+2025-09-21 15:08:16,783 - kedro.runner.sequential_runner - INFO - Completed node: preprocess_shuttles_node
+2025-09-21 15:08:16,784 - kedro.runner.sequential_runner - INFO - Completed 2 out of 3 tasks
+2025-09-21 15:08:16,786 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]preprocessed_shuttles[/dark_orange] (ParquetDataset)...
+2025-09-21 15:08:16,800 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]preprocessed_companies[/dark_orange] (ParquetDataset)...
+2025-09-21 15:08:16,805 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]reviews[/dark_orange] (CSVDataset)...
+2025-09-21 15:08:16,825 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_shuttles;preprocessed_companies;reviews]) -> [model_input_table]
+2025-09-21 15:08:16,857 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]model_input_table[/dark_orange] (ParquetDataset)...
+2025-09-21 15:08:16,884 - kedro.runner.sequential_runner - INFO - Completed node: create_model_input_table_node
+2025-09-21 15:08:16,890 - kedro.runner.sequential_runner - INFO - Completed 3 out of 3 tasks
+2025-09-21 15:08:16,890 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 4.1 sec.
+2025-09-22 19:02:55,450 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-22 19:03:01,952 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-22 19:03:10,761 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-22 19:03:12,935 - kedro_viz.api.rest.responses.run_events - WARNING - Run events file .viz\kedro_pipeline_events.json not found. It may be due to missing `kedro run`
+2026-09-11 17:39:28,153 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2026-09-11 17:39:31,975 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2026-09-11 17:39:36,449 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2026-09-11 17:39:36,643 - kedro_viz.integrations.kedro.run_hooks - WARNING - Workflow tracking is disabled during partial pipeline runs (executed using --from-nodes, --to-nodes, --tags, --pipeline, and more). `.viz/kedro_pipeline_events.json` will be created only during a full kedro run. See issue https://github.com/kedro-org/kedro-viz/issues/2443 for more details.
+2026-09-11 17:39:37,876 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2026-09-11 17:39:37,884 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]companies[/dark_orange] (CSVDataset)...
+2026-09-11 17:39:37,949 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2026-09-11 17:39:37,968 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]preprocessed_companies[/dark_orange] (ParquetDataset)...
+2026-09-11 17:39:38,020 - kedro.runner.sequential_runner - INFO - Completed node: preprocess_companies_node
+2026-09-11 17:39:38,020 - kedro.runner.sequential_runner - INFO - Completed 1 out of 3 tasks
+2026-09-11 17:39:38,030 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]shuttles[/dark_orange] (ExcelDataset)...
+2026-09-11 17:39:45,238 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2026-09-11 17:39:45,285 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]preprocessed_shuttles[/dark_orange] (ParquetDataset)...
+2026-09-11 17:39:45,401 - kedro.runner.sequential_runner - INFO - Completed node: preprocess_shuttles_node
+2026-09-11 17:39:45,406 - kedro.runner.sequential_runner - INFO - Completed 2 out of 3 tasks
+2026-09-11 17:39:45,409 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]preprocessed_shuttles[/dark_orange] (ParquetDataset)...
+2026-09-11 17:39:45,448 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]preprocessed_companies[/dark_orange] (ParquetDataset)...
+2026-09-11 17:39:45,459 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]reviews[/dark_orange] (CSVDataset)...
+2026-09-11 17:39:45,503 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_shuttles;preprocessed_companies;reviews]) -> [model_input_table]
+2026-09-11 17:39:45,659 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]model_input_table[/dark_orange] (ParquetDataset)...
+2026-09-11 17:39:45,717 - kedro.runner.sequential_runner - INFO - Completed node: create_model_input_table_node
+2026-09-11 17:39:45,726 - kedro.runner.sequential_runner - INFO - Completed 3 out of 3 tasks
+2026-09-11 17:39:45,726 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 7.9 sec.
+2026-09-11 17:42:06,133 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2026-09-11 17:42:09,930 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2026-09-11 17:42:14,498 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2026-09-11 17:42:14,689 - kedro_viz.integrations.kedro.run_hooks - WARNING - Workflow tracking is disabled during partial pipeline runs (executed using --from-nodes, --to-nodes, --tags, --pipeline, and more). `.viz/kedro_pipeline_events.json` will be created only during a full kedro run. See issue https://github.com/kedro-org/kedro-viz/issues/2443 for more details.
+2026-09-11 17:42:15,954 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2026-09-11 17:42:15,954 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]companies[/dark_orange] (CSVDataset)...
+2026-09-11 17:42:16,018 - kedro.pipeline.node - INFO - Running node: preprocess_companies_node: preprocess_companies([companies]) -> [preprocessed_companies]
+2026-09-11 17:42:16,031 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]preprocessed_companies[/dark_orange] (ParquetDataset)...
+2026-09-11 17:42:16,085 - kedro.runner.sequential_runner - INFO - Completed node: preprocess_companies_node
+2026-09-11 17:42:16,088 - kedro.runner.sequential_runner - INFO - Completed 1 out of 3 tasks
+2026-09-11 17:42:16,178 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]shuttles[/dark_orange] (ExcelDataset)...
+2026-09-11 17:42:23,075 - kedro.pipeline.node - INFO - Running node: preprocess_shuttles_node: preprocess_shuttles([shuttles]) -> [preprocessed_shuttles]
+2026-09-11 17:42:23,091 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]preprocessed_shuttles[/dark_orange] (ParquetDataset)...
+2026-09-11 17:42:23,188 - kedro.runner.sequential_runner - INFO - Completed node: preprocess_shuttles_node
+2026-09-11 17:42:23,190 - kedro.runner.sequential_runner - INFO - Completed 2 out of 3 tasks
+2026-09-11 17:42:23,196 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]preprocessed_shuttles[/dark_orange] (ParquetDataset)...
+2026-09-11 17:42:23,239 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]preprocessed_companies[/dark_orange] (ParquetDataset)...
+2026-09-11 17:42:23,256 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]reviews[/dark_orange] (CSVDataset)...
+2026-09-11 17:42:23,283 - kedro.pipeline.node - INFO - Running node: create_model_input_table_node: create_model_input_table([preprocessed_shuttles;preprocessed_companies;reviews]) -> [model_input_table]
+2026-09-11 17:42:23,318 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]model_input_table[/dark_orange] (ParquetDataset)...
+2026-09-11 17:42:23,380 - kedro.runner.sequential_runner - INFO - Completed node: create_model_input_table_node
+2026-09-11 17:42:23,383 - kedro.runner.sequential_runner - INFO - Completed 3 out of 3 tasks
+2026-09-11 17:42:23,390 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 7.4 sec.
+2026-09-11 18:11:25,295 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2026-09-11 18:11:29,031 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2026-09-11 18:11:33,476 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. If you want to opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2026-09-11 18:11:33,815 - kedro_viz.integrations.kedro.run_hooks - WARNING - Workflow tracking is disabled during partial pipeline runs (executed using --from-nodes, --to-nodes, --tags, --pipeline, and more). `.viz/kedro_pipeline_events.json` will be created only during a full kedro run. See issue https://github.com/kedro-org/kedro-viz/issues/2443 for more details.
+2026-09-11 18:11:35,102 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2026-09-11 18:11:35,102 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]model_input_table[/dark_orange] (ParquetDataset)...
+2026-09-11 18:11:35,229 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]params:active_modelling_pipeline.model_options[/dark_orange] (MemoryDataset)...
+2026-09-11 18:11:35,242 - kedro.pipeline.node - INFO - Running node: split_data([model_input_table;params:active_modelling_pipeline.model_options]) -> [active_modelling_pipeline.X_train;active_modelling_pipeline.X_test;active_modelling_pipeline.y_train;active_modelling_pipeline.y_test]
+2026-09-11 18:11:35,257 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.X_train[/dark_orange] (MemoryDataset)...
+2026-09-11 18:11:35,266 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.X_test[/dark_orange] (MemoryDataset)...
+2026-09-11 18:11:35,274 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.y_train[/dark_orange] (MemoryDataset)...
+2026-09-11 18:11:35,288 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.y_test[/dark_orange] (MemoryDataset)...
+2026-09-11 18:11:35,321 - kedro.runner.sequential_runner - INFO - Completed node: active_modelling_pipeline.split_data__7035b8e3
+2026-09-11 18:11:35,326 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2026-09-11 18:11:35,332 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]model_input_table[/dark_orange] (ParquetDataset)...
+2026-09-11 18:11:35,365 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]params:candidate_modelling_pipeline.model_options[/dark_orange] (MemoryDataset)...
+2026-09-11 18:11:35,370 - kedro.pipeline.node - INFO - Running node: split_data([model_input_table;params:candidate_modelling_pipeline.model_options]) -> [candidate_modelling_pipeline.X_train;candidate_modelling_pipeline.X_test;candidate_modelling_pipeline.y_train;candidate_modelling_pipeline.y_test]
+2026-09-11 18:11:35,381 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.X_train[/dark_orange] (MemoryDataset)...
+2026-09-11 18:11:35,389 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.X_test[/dark_orange] (MemoryDataset)...
+2026-09-11 18:11:35,397 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.y_train[/dark_orange] (MemoryDataset)...
+2026-09-11 18:11:35,415 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.y_test[/dark_orange] (MemoryDataset)...
+2026-09-11 18:11:35,432 - kedro.runner.sequential_runner - INFO - Completed node: candidate_modelling_pipeline.split_data__a4687b9e
+2026-09-11 18:11:35,442 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2026-09-11 18:11:35,450 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.X_train[/dark_orange] (MemoryDataset)...
+2026-09-11 18:11:35,459 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.y_train[/dark_orange] (MemoryDataset)...
+2026-09-11 18:11:35,473 - kedro.pipeline.node - INFO - Running node: train_model([active_modelling_pipeline.X_train;active_modelling_pipeline.y_train]) -> [active_modelling_pipeline.regressor]
+2026-09-11 18:11:35,496 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]active_modelling_pipeline.regressor[/dark_orange] (PickleDataset)...
+2026-09-11 18:11:35,574 - kedro.runner.sequential_runner - INFO - Completed node: active_modelling_pipeline.train_model__08df062b
+2026-09-11 18:11:35,583 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2026-09-11 18:11:35,588 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.X_train[/dark_orange] (MemoryDataset)...
+2026-09-11 18:11:35,600 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.y_train[/dark_orange] (MemoryDataset)...
+2026-09-11 18:11:35,610 - kedro.pipeline.node - INFO - Running node: train_model([candidate_modelling_pipeline.X_train;candidate_modelling_pipeline.y_train]) -> [candidate_modelling_pipeline.regressor]
+2026-09-11 18:11:35,619 - kedro.io.data_catalog - INFO - Saving data to [dark_orange]candidate_modelling_pipeline.regressor[/dark_orange] (PickleDataset)...
+2026-09-11 18:11:35,651 - kedro.runner.sequential_runner - INFO - Completed node: candidate_modelling_pipeline.train_model__12193795
+2026-09-11 18:11:35,656 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2026-09-11 18:11:35,662 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.regressor[/dark_orange] (PickleDataset)...
+2026-09-11 18:11:35,669 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.X_test[/dark_orange] (MemoryDataset)...
+2026-09-11 18:11:35,681 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]active_modelling_pipeline.y_test[/dark_orange] (MemoryDataset)...
+2026-09-11 18:11:35,691 - kedro.pipeline.node - INFO - Running node: evaluate_model([active_modelling_pipeline.regressor;active_modelling_pipeline.X_test;active_modelling_pipeline.y_test]) -> None
+2026-09-11 18:11:35,702 - spaceflights.pipelines.data_science.nodes - INFO - Model has a coefficient R^2 of 0.419 on test data.
+2026-09-11 18:11:35,710 - kedro.runner.sequential_runner - INFO - Completed node: active_modelling_pipeline.evaluate_model__38d1a3b0
+2026-09-11 18:11:35,714 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2026-09-11 18:11:35,718 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.regressor[/dark_orange] (PickleDataset)...
+2026-09-11 18:11:35,723 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.X_test[/dark_orange] (MemoryDataset)...
+2026-09-11 18:11:35,729 - kedro.io.data_catalog - INFO - Loading data from [dark_orange]candidate_modelling_pipeline.y_test[/dark_orange] (MemoryDataset)...
+2026-09-11 18:11:35,737 - kedro.pipeline.node - INFO - Running node: evaluate_model([candidate_modelling_pipeline.regressor;candidate_modelling_pipeline.X_test;candidate_modelling_pipeline.y_test]) -> None
+2026-09-11 18:11:35,746 - spaceflights.pipelines.data_science.nodes - INFO - Model has a coefficient R^2 of 0.296 on test data.
+2026-09-11 18:11:35,752 - kedro.runner.sequential_runner - INFO - Completed node: candidate_modelling_pipeline.evaluate_model__e61e06b0
+2026-09-11 18:11:35,756 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2026-09-11 18:11:35,756 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 0.7 sec.
