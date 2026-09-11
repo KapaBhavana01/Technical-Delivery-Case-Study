@@ -6,6 +6,12 @@ This project demonstrates how a technical analytics and machine learning initiat
 
 The technical implementation uses the Kedro Spaceflights project as the foundation. The project is being extended as a portfolio case study to demonstrate technical delivery, Agile planning, requirements management, quality validation, and technical decision support.
 
+## Delivery Approach
+
+The project began with exploratory analysis using Jupyter notebooks to assess the available data, understand data quality, identify relevant attributes, and explore the feasibility of the analytics use case.
+
+Following initial analysis and requirements, the exploratory workflow was structured into reusable Kedro pipelines to support a more organized and repeatable implementation.
+
 ## Business Problem
 
 The case study focuses on predicting shuttle ticket prices using historical data.
