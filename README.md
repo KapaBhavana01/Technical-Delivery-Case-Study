@@ -116,16 +116,16 @@ Technical-Delivery-Case-Study/
 
 ## 📚 Project Documentation
 
-| Document                                               | Purpose                                 |
-| ------------------------------------------------------ | --------------------------------------- |
-| [Project Overview](01_project-overview.md)             | Project purpose and delivery approach   |
-| [Requirements](02_requirements.md)                     | Business and functional requirements    |
-| [Delivery Backlog](03_delivery-backlog.md)             | Epics, Stories, Tasks, and traceability |
-| [Acceptance Criteria](04_acceptance-criteria.md)       | Expected Story outcomes                 |
-| [Technical Design](05_technical-design.md)             | Architecture, data flow, and modeling   |
-| [Risks & Dependencies](06_risks-and-dependencies.md)   | Delivery risks and dependencies         |
-| [Release Readiness](07_release-readiness.md)           | Readiness assessment                    |
-| [Retrospective](08_delivery-retrospective.md)          | Lessons learned and improvements        |
+| Document                                                    | Purpose                                 |
+| ----------------------------------------------------------- | --------------------------------------- |
+| [Project Overview](docs/01_project-overview.md)             | Project purpose and delivery approach   |
+| [Requirements](docs/02_requirements.md)                     | Business and functional requirements    |
+| [Delivery Backlog](docs/03_delivery-backlog.md)             | Epics, Stories, Tasks, and traceability |
+| [Acceptance Criteria](docs/04_acceptance-criteria.md)       | Expected Story outcomes                 |
+| [Technical Design](docs/05_technical-design.md)             | Architecture, data flow, and modeling   |
+| [Risks & Dependencies](docs/06_risks-and-dependencies.md)   | Delivery risks and dependencies         |
+| [Release Readiness](docs/07_release-readiness.md)           | Readiness assessment                    |
+| [Retrospective](docs/08_delivery-retrospective.md)          | Lessons learned and improvements        |
 
 ---
 
